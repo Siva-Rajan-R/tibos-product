@@ -45,7 +45,7 @@ const ProductGateway = () => {
           className="text-center"
         >
           <h1 className="text-4xl font-bold text-slate-900">
-            Company Workspace
+            Tibos Workspace
           </h1>
           <p className="mt-3 text-slate-600 max-w-xl mx-auto">
             Select a product to continue. Each product runs independently with
