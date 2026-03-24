@@ -78,7 +78,7 @@ const ProductGateway = () => {
         <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.015] brightness-100 contrast-150"></div>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 flex flex-col items-center py-16">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 flex flex-col items-center py-10">
         
         {/* 2. HEADER SECTION */}
         <motion.div 
@@ -150,12 +150,13 @@ const ProductGateway = () => {
           {/* Powered By Section */}
           <div className="flex flex-col items-center gap-3">
             <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider">Powered By</p>
-            <div className="flex items-center">
+            <div className="flex items-center cursor-pointer" onClick={()=>window.open("https://debuggers.co.in")}>
               {/* Logo Icon */}
               <img 
                 src={DebFullLogoImg} 
-                alt="Buggers Logo" 
+                alt="De-Buggers Logo" 
                 className="h-12 w-auto object-contain"
+                
               />
               
             </div>
