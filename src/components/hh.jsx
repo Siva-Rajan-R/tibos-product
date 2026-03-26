@@ -9,6 +9,7 @@ import {
   Zap,
   Shield,
   Sparkles,
+  Ticket,
 } from "lucide-react";
 import BuggersImg from "../assets/buggers.png"
 import DeBLogoImg from "../assets/delogo.png"
@@ -40,6 +41,19 @@ const products = [
     lightColor: "from-emerald-50 to-teal-50",
     accentColor: "bg-emerald-600",
     shadow: "shadow-emerald-500/20",
+  },
+  {
+    id: "ticketing",
+    name: "Ticketing Tool",
+    category: "Support & Helpdesk",
+    description: "Track, manage, and resolve customer issues with a powerful ticketing system.",
+    url: "https://tt.tibostech.in",
+    status: "LIVE",
+    icon: Ticket, // make sure you import this icon
+    color: "from-orange-600 to-red-600",
+    lightColor: "from-orange-50 to-red-50",
+    accentColor: "bg-orange-600",
+    shadow: "shadow-orange-500/20",
   },
 ];
 
@@ -131,7 +145,7 @@ const ProductGateway = () => {
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-5xl mb-16"
+          className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full mb-14"
         >
           {products.map((product) => (
             <ProductCard key={product.id} product={product} />
